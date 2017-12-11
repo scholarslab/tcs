@@ -1,0 +1,64 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: Raleway, sans-serif;
+  color: #444; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.audible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; }
+
+#banner {
+  background: #555;
+  color: #f0f0f0;
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: row-wrap;
+  justify-content: space-between;
+  align-items: space-between;
+  font-weight: 200;
+  font-size: 1em; }
+  #banner a,
+  #banner :link {
+    color: #f0f0f0;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block; }
+  #banner a:visited,
+  #banner a:hover,
+  #banner a:focus,
+  #banner a:active {
+    color: white;
+    background: rgba(0, 0, 0, 0.25); }
+
+#main {
+  flex: 1;
+  margin: 0 1rem; }
+
+#contentinfo {
+  padding: 1rem;
+  margin: 1rem 1rem 0;
+  border-top: 1px solid #ccc; }
+
+.data > li + li {
+  margin-top: 1rem; }

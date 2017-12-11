@@ -1,0 +1,17 @@
+---
+layout: page 
+title: Browse Database
+---
+
+<ul class="data">
+{% for monument in site.data.monuments %}
+<li>
+    <strong>{{ monument.name }}</strong>
+    <ul>
+        <li>Date Established: {{ monument.date_established }}</li>
+        <li>Date Challenged: {{ monument.date_challenged }}</li>
+        <li>Location: {{ monument.location_text }}</li>
+    </ul>
+</li>
+{% endfor %}
+</ul>

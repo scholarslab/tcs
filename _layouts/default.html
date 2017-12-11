@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>{{ site.title }}</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway:200,400,700" rel="stylesheet">
+<link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+<a href="#main" class="audible">Skip to main content</a>
+<header role="banner" id="banner">
+    <a class="home" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <nav id="primary-nav">
+        <a href="{{ site.baseurl }}/case-studies/">Case Studies</a>
+        <a href="{{ site.baseurl }}/browse/">Browse Data</a>
+        <a href="{{ site.baseurl }}/about/">About</a>
+    </nav>
+</header>
+<main id="main" role="main">
+{{ content }}
+</main>
+<footer role="contentinfo" id="contentinfo">
+    <p>Footer information here! &middot; <a href="#" class="email">Email</a></p>
+</footer>
