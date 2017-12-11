@@ -1,3 +1,3 @@
 title: Transforming Community Spaces
 permalink: /:categories/:title/
-
+exclude: ["Gemfile","Gemfile.lock","CNAME"]
