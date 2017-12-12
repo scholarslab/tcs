@@ -1,6 +1,6 @@
 ---
 layout: page 
-title: Browse Database
+title: Browse Data
 ---
 
 <ul class="data">
@@ -12,6 +12,13 @@ title: Browse Database
         <li>Date Challenged: {{ monument.date_challenged }}</li>
         <li>Location: {{ monument.location_text }}</li>
     </ul>
+    {% assign decision = monument.decision_process | strip %}
+    <p>{{ decision }}. 
+    {% assign website = monument.party_website %}
+    {% if website %}
+    <a href="{{ monument.party_website }}">More information</a>
+    {% endif %}
+    </p>
 </li>
 {% endfor %}
 </ul>
