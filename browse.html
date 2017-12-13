@@ -13,12 +13,23 @@ title: Browse Data
         <li>Location: {{ monument.location_text }}</li>
     </ul>
     {% assign decision = monument.decision_process | strip %}
+    {% if decision %}
     <p>{{ decision }}. 
     {% assign website = monument.party_website %}
     {% if website %}
     <a href="{{ monument.party_website }}">More information</a>
     {% endif %}
-    </p>
+    {% endif %}
+
+    {% assign parties = monument.parties_involved | strip | split: "*" %}
+    {% if parties %}
+    <p><em>Parties Involved</em></p>
+    <ul>
+    {% for party in parties %}
+    <li>{{ party | strip }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
 </li>
 {% endfor %}
 </ul>
