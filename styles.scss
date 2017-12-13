@@ -46,10 +46,9 @@ label:first-of-type {
 }
 
 #banner {
-    background: #404040;
+    background: #fff;
     border-top: .25rem solid #303030;
-    color: #f0f0f0;
-    color: rgba(255,255,255,.9);
+    color: #333;
     display:flex;
     flex-direction: row-wrap;
     justify-content: space-between;
@@ -58,8 +57,7 @@ label:first-of-type {
     font-size: 1em;
     a,
     :link {
-        color: #f0f0f0;
-        color: rgba(255,255,255,.9);
+        color: #333;
         text-decoration:none;
         padding: 1rem;
         display:inline-block;
@@ -69,8 +67,7 @@ label:first-of-type {
     a:hover,
     a:focus,
     a:active {
-        color: white;
-        background: rgba(0,0,0,0.25);
+        color: #111;
     }
 
 }
@@ -80,12 +77,11 @@ label:first-of-type {
     margin:0 3rem 3rem;
 
     .home & {
-            background-image: linear-gradient(rgba(0,0,0,.375) 0,rgba(0,0,0,.375) 100%), url('images/bricks.jpg');
+            background-image: linear-gradient(rgba(255,255,255,.375) 0,rgba(255,255,255,.375) 100%), url('images/bricks.jpg');
             background-position: top left;
             background-repeat:no-repeat;
             background-size: 100% 100%, cover;
-        color: white;
-        color: rgba(255,255,255,.9);
+        color: #333;
         display:flex;
         margin:0;
         padding: 0 3rem;
