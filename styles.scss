@@ -36,7 +36,8 @@ body {
 }
 
 #banner {
-    background: #555;
+    background: #404040;
+    border-top: .25rem solid #303030;
     color: #f0f0f0;
     color: rgba(255,255,255,.9);
     display:flex;
@@ -66,12 +67,75 @@ body {
 
 #main {
     flex: 1;
-    margin:0 1rem;
+    margin:0 3rem 3rem;
+
+    .home & {
+            background-image: linear-gradient(rgba(0,0,0,.375) 0,rgba(0,0,0,.375) 100%), url('images/bricks.jpg');
+            background-position: top left;
+            background-repeat:no-repeat;
+            background-size: 100% 100%, cover;
+        color: white;
+        color: rgba(255,255,255,.9);
+        display:flex;
+        margin:0;
+        padding: 0 3rem;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+
+        .feature {
+            font-size: 2rem;
+            line-height: 1.5;
+            font-weight: 700;
+        }
+        
+    }
+    article {
+        display:flex;
+        flex-direction: column;
+        header {
+            margin: 0 -3rem 3rem;
+            padding: 0 3rem;
+            min-height: 30vh;
+            background-image: linear-gradient(rgba(0,0,0,.375) 0,rgba(0,0,0,.375) 100%), url('images/bricks.jpg');
+            background-position: top left;
+            background-repeat:no-repeat;
+            background-size: 100% 100%, cover;
+            display:flex;
+            flex-direction: row-wrap;
+            align-items:center;
+            
+             h1 {
+                margin:0;
+                font-weight: 200;
+                font-size: 3rem;
+                color: white;
+            }
+        }
+    }
+
 }
 #contentinfo {
-    padding: 1rem;
-    margin: 1rem 1rem 0;
-    border-top: 1px solid #ccc;
+    padding: 1rem 3rem;
+    background: #292929;
+    color: white;
+    color: rgba(255,255,255,0.9);
+
+    a,
+    :link {
+        color: #f0f0f0;
+        color: rgba(255,255,255,.9);
+        text-decoration:none;
+    }
+
+    a:visited,
+    a:hover,
+    a:focus,
+    a:active {
+        color: white;
+        background: rgba(0,0,0,0.25);
+    }
+
 }
 
 .data > li + li {
