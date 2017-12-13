@@ -1,0 +1,36 @@
+---
+layout: page
+title: Search
+---
+
+<form method="get" action="{{ site.baseurl }}/{{ page.url }}">
+
+    <label>Keyword</label> <input type="text">
+    <br>
+    <label>Topic</label>
+    <select>
+        <option></option>
+        <option>Monument</option>
+        <option>Memorial</option>
+        <option>Park</option>
+        <option>Building</option>
+    </select>
+    
+    <label>Date</label>
+    <select>
+        <option>From</option>
+        <option>Before</option>
+        <option>Since</option>
+    </select>
+    <input type="date" placeholder="1900">
+    <select>
+        <option>Since</option>
+        <option>To</option>
+        <option>After</option>
+    </select>
+    <input type="date" placeholder="2017">
+    <br>
+    <label>Location</label> <input type="text" placeholder="Virginia">
+    <br>
+    <input type="submit" value="Search">
+</form>
